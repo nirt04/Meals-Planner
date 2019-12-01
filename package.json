@@ -1,6 +1,6 @@
 {
-  "homepage": "http://nirt04.github.io/MealsPlan",
-  "name": "meals-plane",
+  "homepage": "http://nirt04.github.io/MealsPlanner",
+  "name": "meals-planner",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

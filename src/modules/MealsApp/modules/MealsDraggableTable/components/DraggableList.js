@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import initialData from "../../../../../data/meals-plane";
+import initialData from "../../../../../data/meals-planner";
 import { DragDropContext } from "react-beautiful-dnd";
 import Column from "../components/Column";
 import { format } from "util";
