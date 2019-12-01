@@ -1,0 +1,29 @@
+.dragable-list--column-tasks-list {
+    min-height: 25px;
+  }
+  .mpt--column-container{
+    background: green;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    max-width: 450px;
+  }
+  .mpt--column-Task {
+    display: flex;
+    background: bisque;
+    padding: 10px;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    .mpt--task-img{
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .mpt--task-info-container{
+  
+    }
+  }
+  
