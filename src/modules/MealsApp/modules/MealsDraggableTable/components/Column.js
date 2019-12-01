@@ -1,5 +1,5 @@
 import React from "react";
-import Task from "../components/Task";
+import Meal from "../components/Meal";
 import { Droppable } from "react-beautiful-dnd";
 export default function Column(props) {
   // debugger
@@ -9,8 +9,8 @@ export default function Column(props) {
       <h3>{props.column.title}</h3>
       <Droppable droppableId={props.column.id}>
         {(provided) => (
-          <div className="dragable-list--column-tasks-list" {...provided.droppableProps} ref={provided.innerRef} >
-            {props.tasks.map((task, i) => ( <Task key={task.id} task={task} index={i} /> ))}
+          <div className="dragable-list--column-meals-list" {...provided.droppableProps} ref={provided.innerRef} >
+            {props.meals.map((meal, i) => ( <Meal key={meal.id} meal={meal} index={i} /> ))}
             {provided.placeholder}
           </div>
         )}

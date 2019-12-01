@@ -1,4 +1,4 @@
-.dragable-list--column-tasks-list {
+.dragable-list--column-meals-list {
     min-height: 25px;
   }
   .mpt--column-container{
@@ -8,21 +8,21 @@
     border-radius: 7px;
     max-width: 450px;
   }
-  .mpt--column-Task {
+  .mpt--column-Meal {
     display: flex;
     background: bisque;
     padding: 10px;
     align-items: center;
     margin: 10px 0;
     border-radius: 5px;
-    .mpt--task-img{
+    .mpt--meal-img{
       width: 50px;
       height: 50px;
       background-size: cover;
       margin-right: 10px;
       border-radius: 5px;
     }
-    .mpt--task-info-container{
+    .mpt--meal-info-container{
   
     }
   }

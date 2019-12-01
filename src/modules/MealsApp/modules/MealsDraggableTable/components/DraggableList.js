@@ -14,28 +14,28 @@ if (destination.droppableId !== source.droppableId || destination.index === sour
 const sourceColumn = state.columns[source.droppableId];
 const destinationColumn = state.columns[destination.droppableId]
 // Store new meals Ids of each columns
-const newSourceTaskIds = Array.from(sourceColumn.tasksIds);
-const newDestinationTaskIds = Array.from(destinationColumn.tasksIds);
+const newSourceMealIds = Array.from(sourceColumn.mealsIds);
+const newDestinationMealIds = Array.from(destinationColumn.mealsIds);
 // remove meal from source column
-newSourceTaskIds.splice(source.index, 1);
+newSourceMealIds.splice(source.index, 1);
 // adding meal to the destination column
-newDestinationTaskIds.splice(destination.index, 0, draggableId);
+newDestinationMealIds.splice(destination.index, 0, draggableId);
 // creating the new source and destintion object for state mutation
-const newSourceColumn = { ...sourceColumn, tasksIds: Array.from(new Set(newSourceTaskIds))  };
-const newDestinationColumn = { ...destinationColumn, tasksIds: Array.from(new Set(newDestinationTaskIds)) };
+const newSourceColumn = { ...sourceColumn, mealsIds: Array.from(new Set(newSourceMealIds))  };
+const newDestinationColumn = { ...destinationColumn, mealsIds: Array.from(new Set(newDestinationMealIds)) };
 // merging to an 1 object for state mutation
 const newColumns = { ...state.columns, [newSourceColumn.id]: newSourceColumn, [newDestinationColumn.id]: newDestinationColumn };
 // setting the state with the new Columns object after reordering
 setState({ ...state, columns: newColumns });
-console.log(newSourceTaskIds)
+console.log(newSourceMealIds)
 }
 // Logic for draggin inside columns
     else {
       const column = state.columns[source.droppableId];
-      const newTaskIds = Array.from(column.tasksIds);
-      newTaskIds.splice(source.index, 1);
-      newTaskIds.splice(destination.index, 0, draggableId);
-      const newColumn = { ...column, tasksIds: Array.from(new Set(newTaskIds)) };
+      const newMealIds = Array.from(column.mealsIds);
+      newMealIds.splice(source.index, 1);
+      newMealIds.splice(destination.index, 0, draggableId);
+      const newColumn = { ...column, mealsIds: Array.from(new Set(newMealIds)) };
       const newColumns = { ...state.columns, [newColumn.id]: newColumn };
       setState({ ...state, columns: newColumns });
     }
@@ -59,8 +59,8 @@ console.log(newSourceTaskIds)
     >
       {state.columnOrder.map(columnId => {
         const column = state.columns[columnId];
-        const tasks = column.tasksIds.map(taskId => state.tasks[taskId]);
-        return <Column key={column.id} column={column} tasks={tasks} />;
+        const meals = column.mealsIds.map(mealId => state.meals[mealId]);
+        return <Column key={column.id} column={column} meals={meals} />;
       })}
     </DragDropContext>
   );
