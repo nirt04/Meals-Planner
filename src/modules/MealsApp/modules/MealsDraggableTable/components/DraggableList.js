@@ -6,7 +6,7 @@ import { format } from "util";
 export default function DraggableList() {
   const [state, setState] = useState(initialData);
   const onDragEnd = ({ destination, source, draggableId }) => {
-  debugger
+  
 if(!destination) return
 // Logic for dragging between columns
 if (destination.droppableId !== source.droppableId || destination.index === source.index ) {
@@ -53,7 +53,6 @@ console.log(newSourceMealIds)
 
   return (
     <DragDropContext
-      onDragStart={() => console.log("onDragStart")}
       onDragStart={() => console.log("onDragStart")}
       onDragEnd={onDragEnd}
     >

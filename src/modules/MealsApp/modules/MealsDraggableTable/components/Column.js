@@ -2,7 +2,7 @@ import React from "react";
 import Meal from "../components/Meal";
 import { Droppable } from "react-beautiful-dnd";
 export default function Column(props) {
-  // debugger
+  // 
   // console.log(props)
   return (
     <div className="mpt--column-container">

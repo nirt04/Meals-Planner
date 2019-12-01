@@ -1,29 +1,97 @@
+.DraggableList--main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px;
+}
 .dragable-list--column-meals-list {
-    min-height: 25px;
+  min-height: 25px;
+}
+.mpt--column-container {
+  background: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  width: 450px;
+}
+.mpt--column-Meal {
+  display: flex;
+  background: #ffffff;
+  padding: 10px;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  justify-content: space-between;
+  border: 2px solid #ffffff;
+  .mpt-meal-btn-actions {
+    opacity: 0;
+    transition: 0.4s ease;
   }
-  .mpt--column-container{
-    background: green;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 7px;
-    max-width: 450px;
+  svg {
+    transition: 0.4s ease;
+    color: #939393;
+    transition: 0.4s ease;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
-  .mpt--column-Meal {
+  .mpt--meal-info-container {
+    transition: 0.4s ease;
     display: flex;
-    background: bisque;
-    padding: 10px;
-    align-items: center;
-    margin: 10px 0;
+  }
+  .mpt--meal-img {
+    transition: 0.4s ease;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 10px;
     border-radius: 5px;
-    .mpt--meal-img{
-      width: 50px;
-      height: 50px;
-      background-size: cover;
-      margin-right: 10px;
-      border-radius: 5px;
+  }
+  .mpt--meal-unit-info {
+    transition: 0.4s ease;
+    margin: 10px 0;
+    input {
+      max-width: 22px;
     }
-    .mpt--meal-info-container{
-  
+    input,
+    select {
+      background-color: transparent;
+      border-style: none;
+      color: inherit;
+      outline: none;
+      border-radius: 10px;
+      // height: 20px;
+      font-size: 12px;
+    }
+    select {
+      height: 16px;
     }
   }
-  
+
+  &:hover,
+  &:active {
+    .mpt-meal-btn-actions {
+      opacity: 1;
+    }
+    border: 2px solid #e7e7e7;
+    .mpt--meal-info-container {
+      display: flex;
+      input,
+      select {
+        // height: fit-content;
+        // max-width: 91px;
+        outline: none;
+        margin: 0 5px;
+        // &:focus {
+        background-color: #f3f9fd;
+        border-radius: 1px;
+        box-shadow: 0 0 0 2px #f3f9fd, 0 0 0 4px #cdd4d9;
+        // }
+      }
+    }
+  }
+}
+
+.mpt-meal-input {
+}

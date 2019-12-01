@@ -4,7 +4,7 @@ import DraggableList from "./components/DraggableList";
 export default function MealsDraggableTable() {
   useEffect(() => console.log("MealsPlannerTable mounted"), []);
   return (
-    <div>
+    <div className="DraggableList--main-container" >
       <h1>hello from MealsPlannerTable </h1>
       {/* <MaterialUiTable /> */}
       <DraggableList />
