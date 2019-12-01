@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/MealsPlan/static/css/main.d16cff7d.chunk.css",
+    "main.js": "/MealsPlan/static/js/main.1c461414.chunk.js",
+    "main.js.map": "/MealsPlan/static/js/main.1c461414.chunk.js.map",
+    "runtime-main.js": "/MealsPlan/static/js/runtime-main.94f96ace.js",
+    "runtime-main.js.map": "/MealsPlan/static/js/runtime-main.94f96ace.js.map",
+    "static/css/2.117ce29f.chunk.css": "/MealsPlan/static/css/2.117ce29f.chunk.css",
+    "static/js/2.36cf65c8.chunk.js": "/MealsPlan/static/js/2.36cf65c8.chunk.js",
+    "static/js/2.36cf65c8.chunk.js.map": "/MealsPlan/static/js/2.36cf65c8.chunk.js.map",
+    "index.html": "/MealsPlan/index.html",
+    "precache-manifest.77bf7e1f68718dfb79b65c5e15ba6bef.js": "/MealsPlan/precache-manifest.77bf7e1f68718dfb79b65c5e15ba6bef.js",
+    "service-worker.js": "/MealsPlan/service-worker.js",
+    "static/css/2.117ce29f.chunk.css.map": "/MealsPlan/static/css/2.117ce29f.chunk.css.map",
+    "static/css/main.d16cff7d.chunk.css.map": "/MealsPlan/static/css/main.d16cff7d.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94f96ace.js",
+    "static/css/2.117ce29f.chunk.css",
+    "static/js/2.36cf65c8.chunk.js",
+    "static/css/main.d16cff7d.chunk.css",
+    "static/js/main.1c461414.chunk.js"
+  ]
+}
